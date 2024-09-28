@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: LeaseCalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in LeaseCalculatorTest
+testCalculateMonthlyPayment  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <833.33> but was: <729.1666666666666>
+	at LeaseCalculatorTest.testCalculateMonthlyPayment(LeaseCalculatorTest.java:19)
+
