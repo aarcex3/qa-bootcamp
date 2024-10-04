@@ -7,6 +7,8 @@ public class Main {
         dog.makeSound();
 
         // Agustin's code
+        Cat cat = new Cat("Garfield", "Orange");
+        cat.makeSound();
 
         // Romina's code
 
