@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hola amiwis");
 
-        String filePath = "/home/aarce/Bootcamp/hw/zoo/src/main/java/com/bootcamp/homework/zoo.json";
+        String filePath = Main.class.getClassLoader().getResource("zoo.json").getPath();
         try {
             String content = new String(Files.readAllBytes(Paths.get(filePath)));
             JSONObject data = new JSONObject(content);
