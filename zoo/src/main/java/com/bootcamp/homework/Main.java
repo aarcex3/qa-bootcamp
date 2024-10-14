@@ -39,13 +39,13 @@ public class Main {
 
                 Animal animalObj;
                 switch (specie.toLowerCase()) {
-                case "canino":
+                case "Dog":
                     animalObj = new Dog(specie, breed, name, birthYear);
                     break;
-                case "felino":
+                case "Cat":
                     animalObj = new Cat(specie, breed, name, birthYear);
                     break;
-                case "mammal":
+                case "Horse":
                     animalObj = new Horse(specie, breed, name, birthYear);
                     break;
                 default:
