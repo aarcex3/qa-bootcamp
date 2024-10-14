@@ -1,0 +1,34 @@
+{
+    "animals": [
+        {
+            "birthYear": 2015,
+            "breed": "Labrador Retriever",
+            "name": "Buddy",
+            "specie": "Dog"
+        },
+        {
+            "birthYear": 2018,
+            "breed": "Persian",
+            "name": "Whiskers",
+            "specie": "Cat"
+        },
+        {
+            "birthYear": 2020,
+            "breed": "Arabian",
+            "name": "Thunder",
+            "specie": "Horse"
+        }
+    ],
+    "zones": [
+        {
+            "animals": [],
+            "capacity": 2,
+            "name": "Domestic Animals Zone"
+        },
+        {
+            "animals": [],
+            "capacity": 3,
+            "name": "Equestrian Zone"
+        }
+    ]
+}
