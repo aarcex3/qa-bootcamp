@@ -18,7 +18,7 @@ public class ZooArea {
     }
 
     public void addAnimal(Animal animal) {
-        if (this.animals.size() > this.capacity) {
+        if (this.animals.size() >= this.capacity) {
             System.out.println("No se puede agragar mas animales");
         } else {
             this.animals.add(animal);

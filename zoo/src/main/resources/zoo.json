@@ -21,12 +21,10 @@
     ],
     "zones": [
         {
-            "animals": [],
             "capacity": 2,
             "name": "Domestic Animals Zone"
         },
         {
-            "animals": [],
             "capacity": 3,
             "name": "Equestrian Zone"
         }

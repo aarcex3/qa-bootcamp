@@ -39,21 +39,21 @@ public class Main {
 
                 Animal animalObj;
                 switch (specie.toLowerCase()) {
-                case "Dog":
+                case "dog":
                     animalObj = new Dog(specie, breed, name, birthYear);
                     break;
-                case "Cat":
+                case "cat":
                     animalObj = new Cat(specie, breed, name, birthYear);
                     break;
-                case "Horse":
+                case "horse":
                     animalObj = new Horse(specie, breed, name, birthYear);
                     break;
                 default:
                     continue;
                 }
 
-                if (!zoo.getAreas().isEmpty()) {
-                    zoo.getAreas().get(0).addAnimal(animalObj);
+                for (ZooArea area : zoo.getAreas()) {
+                    area.addAnimal(animalObj);
                 }
             }
 
@@ -61,11 +61,12 @@ public class Main {
             System.out.println("Areas del zoologico:");
             for (ZooArea area : zoo.getAreas()) {
                 System.out.println(
-                        "Area: " + area.getName() + " Capacidad: " + area.getCapacity() + " Animales en la zona:");
-                for (IAnimal animal : area.getAnimals()) {
-                    System.out.println("Nombre: " + animal.getName() + ". Especie: " + animal.getSpecie() + ". Raza: "
+                        "Area: " + area.getName() + ". Capacidad: " + area.getCapacity() + ". Animales en la zona:");
+                for (Animal animal : area.getAnimals()) {
+                    System.out.println("\tNombre: " + animal.getName() + ". Especie: " + animal.getSpecie() + ". Raza: "
                             + animal.getBreed() + ". Fecha de nacimiento: " + animal.getBirthYear());
                 }
+
             }
 
             System.out.println("Areas con menos de 3 animales:");
@@ -75,7 +76,7 @@ public class Main {
             for (ZooArea area : filteredAreas) {
                 System.out.println("Area: " + area.getName());
                 for (IAnimal animal : area.getAnimals()) {
-                    System.out.println("Nombre: " + animal.getName() + ". Especie: " + animal.getSpecie() + ". Raza: "
+                    System.out.println("\tNombre: " + animal.getName() + ". Especie: " + animal.getSpecie() + ". Raza: "
                             + animal.getBreed() + ". Fecha de nacimiento: " + animal.getBirthYear());
                 }
             }
